@@ -49,6 +49,6 @@ abstract class AbstractDecorator implements DecoratorInterface
      */
     public function isInstanceOf(string $class): bool
     {
-        return is_subclass_of($this->getWrapped(), $class);
+        return is_a($this->wrapped, $class);
     }
 }
