@@ -1,0 +1,35 @@
+{
+    "name": "zingle-com/php-decorator",
+    "description": "Decorators in PHP",
+    "authors": [{
+        "name": "Zingle",
+        "homepage": "https://github.com/Zingle/php-rpc"
+    },{
+        "name": "Zachary Quintana",
+        "homepage": "https://github.com/zquintana"
+    }],
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4",
+        "escapestudios/symfony2-coding-standard": "^3.9",
+        "php-coveralls/php-coveralls": "^2.1",
+        "pascaldevink/shortuuid": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZingleCom\\Decorator\\Test\\": "tests",
+            "ZingleCom\\Decorator\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "test-no-coverage": "@test --no-coverage",
+        "check-standards": "./vendor/bin/phpcs -p",
+        "test-all": [
+            "@check-standards",
+            "@test"
+        ]
+    }
+}
