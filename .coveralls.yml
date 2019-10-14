@@ -1,0 +1,4 @@
+service_name: travis-pro
+repo_token: JnujRAeVd3pDc4Wg8dKcFtry2L9mRmtPv
+coverage_clover: tmp/clover.xml
+json_path: tmp/coveralls.json
